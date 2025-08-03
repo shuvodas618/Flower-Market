@@ -88,15 +88,49 @@ ul li a{
     position: relative;
 }
 /* latest deal */
-.overlay {
-    position: relative;
-  }
-  
-  .overlay img {
-    width: 100%;
-    display: block;
-    filter: brightness(70%); /* Darkens the image */
-  }  
+.latest-deal-text{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+    height: 206px;
+}
+.offer-card-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.bloom{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/deal-bloom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.zabo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/deal-zabo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 100%;
+    
+}
+.ana{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/deal-ana.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* colorful-bunch */
 .colorful-bunch{
     background-image: url(./assets/news-letter-bg.png);
@@ -155,21 +189,17 @@ ul li a{
     .fresh-flower-section {
       flex-direction: column-reverse; /* Stack vertically */
       text-align: center;
-      border: 2px solid black;
     }
     .fresh-flower-img{
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        border: 2px solid red;
     }
     .fresh-flower-text{
         margin-left: 0px;
-        border: 2px solid black;
     }
     .fresh-flower-text span {
       font-size: 20px; /* Reduce text size for mobile */
-      border: 2px solid red;
     }
     .card-container {
         grid-template-columns: repeat(2, 1fr);
@@ -179,30 +209,25 @@ ul li a{
         text-align: center;
         color: white;
         font-size: 15px;
-        border: 2px solid red;
     }
     .bunch-input{
         width: 200px;
         height: 50px;
         border: none;
         padding-left: 5px;
-        border: 2px solid black;
         
     }
     .foot{
         flex-direction: column;
-        border: 2px solid red;
     }
     .infos ul{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
         margin-bottom: 10px;
         display: block;
-        border: 2px solid black;
     }
     .socials{
         gap: 20px;
-        border: 2px solid red;
     }
     .plants-lover{
         flex-direction: column;
@@ -222,5 +247,15 @@ ul li a{
     }
     .plants-lover-img img{
         width: 100%;
+    }
+    .offer-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        height: 206px;
+    }
+    .zabo{
+        grid-row: auto;
+        grid-column: auto;
     }
   }
