@@ -1,0 +1,226 @@
+/*shared styles */
+.text-style{
+    font-size: 50px; 
+    font-weight: 700;
+}
+.display-flex{
+    display: flex;
+}
+.bold{
+    font-weight: bold;
+}
+.width-margin{
+    max-width: 1140px;
+    margin: 0 auto 100px auto;
+}
+/* text colorr */
+.yellow{
+    color: #E95A08;
+}
+/* nav styles */
+.nav-main{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links{
+    gap: 50px;
+}
+.nav-main ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* section styles */
+.Always{
+    font-size: 70px;
+}
+.fresh-flower-section{
+    height: 461px;
+    align-items: flex-end;
+}
+.fresh-flower-img img{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+/*our plants section */
+.our-plants{
+    text-align: center;
+}
+.our-plants-card img{
+    width: 100%;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.our-plants-card button {
+    width: 100%;
+    height: 50px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
+/* plants lover */
+.plants-lover{
+    display: flex;
+}
+.plants-lover-text{
+    padding-left: 80px;
+}
+.plants-lover-text ul li{
+    margin-bottom: 20px;
+}
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+.plants-lover-img{
+    position: relative;
+}
+/* latest deal */
+.overlay {
+    position: relative;
+  }
+  
+  .overlay img {
+    width: 100%;
+    display: block;
+    filter: brightness(70%); /* Darkens the image */
+  }  
+/* colorful-bunch */
+.colorful-bunch{
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.colorful-bunch img{
+    width: 100%;
+}
+.colorful-bunch-input{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.bunch-input{
+    width: 644px;
+    height: 50px;
+    border: none;
+    padding-left: 30px;
+    
+}
+.bunch-button{
+    background-color:#E95A08 ;
+    width: 186px;
+    height: 50px;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+/* footer styles */
+
+.foot{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 321px;
+    height: 248px;
+}
+.socials{
+    display: flex;
+    height: 36px;
+    width: 216px;
+}
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    .fresh-flower-section {
+      flex-direction: column-reverse; /* Stack vertically */
+      text-align: center;
+      border: 2px solid black;
+    }
+    .fresh-flower-img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border: 2px solid red;
+    }
+    .fresh-flower-text{
+        margin-left: 0px;
+        border: 2px solid black;
+    }
+    .fresh-flower-text span {
+      font-size: 20px; /* Reduce text size for mobile */
+      border: 2px solid red;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        border: 2px solid black;
+    }
+    .colorful-bunch-input{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        border: 2px solid red;
+    }
+    .bunch-input{
+        width: 200px;
+        height: 50px;
+        border: none;
+        padding-left: 5px;
+        border: 2px solid black;
+        
+    }
+    .foot{
+        flex-direction: column;
+        border: 2px solid red;
+    }
+    .infos ul{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        margin-bottom: 10px;
+        display: block;
+        border: 2px solid black;
+    }
+    .socials{
+        gap: 20px;
+        border: 2px solid red;
+    }
+    .plants-lover{
+        flex-direction: column;
+    }
+    .badge{
+        display: none;
+    }
+    br{
+        display: none;
+    }
+    .text-style{
+        font-size: 24px;
+    }
+    .plants-lover-text{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .plants-lover-img img{
+        width: 100%;
+    }
+  }
